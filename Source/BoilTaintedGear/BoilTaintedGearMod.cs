@@ -17,9 +17,14 @@ namespace BoilTaintedGear
         public bool enabled = true;
 
         /// <summary>Durability cost of one boil, in percent of the item's
-        /// CURRENT hit points (default 10). Clamped 0..90 when read; boiling
-        /// never destroys an item either way.</summary>
-        public int durabilityCostPercent = 10;
+        /// CURRENT hit points (default 30). Clamped 0..90 when read; boiling
+        /// never destroys an item either way. The default is tuned so the
+        /// average piece of raider loot (~84% of max HP, see vanilla
+        /// gearHealthRange rolls) lands at ~59% - above the 50% "ratty
+        /// apparel" mood line, but through the 60% market-value cliff of
+        /// StatPart_Health - i.e. barely usable, exactly the intended
+        /// balance.</summary>
+        public int durabilityCostPercent = 30;
 
         public int debugLevel = (int)DebugLogLevel.Off;
 
@@ -27,7 +32,7 @@ namespace BoilTaintedGear
         {
             base.ExposeData();
             Scribe_Values.Look(ref enabled, "enabled", true);
-            Scribe_Values.Look(ref durabilityCostPercent, "durabilityCostPercent", 10);
+            Scribe_Values.Look(ref durabilityCostPercent, "durabilityCostPercent", 30);
             Scribe_Values.Look(ref debugLevel, "debugLevel", (int)DebugLogLevel.Off);
         }
     }
@@ -47,7 +52,7 @@ namespace BoilTaintedGear
         /// points, read at the moment a job completes so setting changes
         /// apply from the next boiled item on.</summary>
         public static int DurabilityCostPercent =>
-            Mathf.Clamp(Settings?.durabilityCostPercent ?? 10, 0, 90);
+            Mathf.Clamp(Settings?.durabilityCostPercent ?? 30, 0, 90);
 
         public BoilTaintedGearMod(ModContentPack content) : base(content)
         {

@@ -9,7 +9,7 @@
   </supportedVersions>
   <description>Stoves and campfires gain a "boil tainted gear" bill that washes the death out of apparel. Anything that can become tainted (modded and DLC apparel included) shows up in the bill filter as usual, so you just queue the pieces you want cleaned.
 
-Boiling is no free lunch: the scrubbing wears the item out, costing a share of its current durability (10% by default, configurable in the mod settings). The item keeps its quality, color, style and any mod-added parts - only the taint goes and some hit points with it.
+Boiling is no free lunch: the scrubbing wears the item out, costing a share of its current durability (30% by default, configurable in the mod settings). That is tuned so an average piece of looted gear comes out wearable but clearly second-hand - good pieces survive nicely, junk stays junk. The item keeps its quality, color, style and any mod-added parts - only the taint goes and some durability with it.
 
 No research needed: a campfire and a big pot of water are enough, so tribal colonies can clean loot from day one. No new dependencies, nothing hardcoded to specific items - the bill is an ordinary recipe attached through the vanilla recipeUsers mechanism, works with all DLC and mods, and is safe to add or remove at any time. Optional layered debug logging in the settings.</description>
 </ModMetaData>

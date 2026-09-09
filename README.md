@@ -22,9 +22,19 @@ safe to add or remove at any time.
    next to the fire for a hauler to carry back to your stockpile.
 
 Boiling is deliberately not free: the scrubbing wears the item out, charging
-**10% of the item's current durability** by default (rounded up, configurable
+**30% of the item's current durability** by default (rounded up, configurable
 in the mod settings). An item is never destroyed by boiling - the worst case
 leaves it at 1 hp.
+
+Why 30%: the *average* piece of raider loot spawns at ~84% of max HP
+(vanilla `gearHealthRange` rolls), so it comes out at ~59% - right between
+vanilla's two usability lines. Above the 50% "ratty apparel" mood threshold,
+but through the 60% market-value cliff (`StatPart_Health`: 60% HP sells for
+half, 50% HP for a tenth). Per tier: elite gear (100%) cleans up to 70% and
+still sells well; pirate/mercenary pieces (~97-98%) land at ~68%; scavenger
+gear (~74%) at ~52%; drifter rags (~40%) turn into 28% junk - so it pays to
+cherry-pick what you boil. Armor itself never degrades with HP in RimWorld,
+so a cleaned vest still protects fully; the tax is mood and trade value.
 
 ## Balance
 
@@ -40,14 +50,14 @@ at 20):
 
 Cleaning a big raid's loot is a real labor investment for rookie cooks - and
 boiling trains Cooking as a side effect, so the chore eases as your cook
-learns. The 10% durability charge stacks the usual apparel policy pressure on
+learns. The 30% durability charge stacks the usual apparel policy pressure on
 top: repeatedly saved gear is still gear you'll want to replace eventually.
 
 ## Mod settings
 
 - **Enabled** - master switch. While off, boil bills find no ingredients and
   sit idle; they work again when re-enabled.
-- **Durability cost** (default 10%) - share of *current* hit points charged
+- **Durability cost** (default 30%) - share of *current* hit points charged
   per boil, rounded up. Applies from the next boiled item on.
 - **Debug logging** - Off / Basic (mod load, every boiled item) / Verbose
   (per-item durability details and fallback paths).
