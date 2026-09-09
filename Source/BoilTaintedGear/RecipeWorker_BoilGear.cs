@@ -27,11 +27,11 @@ namespace BoilTaintedGear
                 }
                 return;
             }
-            // Unreachable through the bill filter; keep vanilla consume
-            // semantics so a weird ingredient can never silently vanish in a
-            // bill that promises to hand the item back.
-            DebugLog.Warning("skipped non-tainted ingredient, consuming it the vanilla way: " + ingredient);
-            base.ConsumeIngredient(ingredient, recipe, map);
+            // Unreachable through the bill filter; if something untainted ever
+            // lands here anyway (another mod untainting mid-job, dev tools),
+            // leave the item untouched - this bill promises to hand gear back,
+            // never to destroy it. The next ingredient search won't re-pick it.
+            DebugLog.Warning("skipped non-tainted ingredient, leaving it in place: " + ingredient);
         }
 
         public override void Notify_IterationCompleted(Pawn billDoer, List<Thing> ingredients)

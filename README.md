@@ -101,7 +101,7 @@ For modders and the curious - no def, DLC or mod lists are hardcoded:
   cares (`ApparelProperties.careIfWornByCorpse`, default true) and is
   cleared here the same way vanilla resurrection clears it. The rotten tint
   is re-rendered away via `Notify_ColorChanged`.
-- Debug logging (Basic/Verbose) covers load, settings and every boiled item.
+- Debug logging (Basic/Verbose) covers mod load and every boiled item.
 
 ## Build from source
 

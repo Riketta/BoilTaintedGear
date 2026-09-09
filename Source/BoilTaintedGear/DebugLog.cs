@@ -3,7 +3,7 @@ using Verse;
 namespace BoilTaintedGear
 {
     /// <summary>Optional layered logging, off by default (see mod settings).
-    /// Basic: mod loading, settings changes, every boiled item.
+    /// Basic: mod loading, every boiled item.
     /// Verbose: additionally per-item durability details and fallback paths.
     /// Errors are always logged regardless of level.</summary>
     internal static class DebugLog
