@@ -19,8 +19,7 @@ Stoves and campfires gain a "boil tainted gear" bill that washes the death out o
 Master switch, durability cost slider (0-90%, default 30%), and debug logging (Off / Basic / Verbose).
 
 [h3]Things to keep in mind[/h3]
-[list][*]Boiling is slow on purpose: one item takes over three times the work of cooking a simple meal, and the bill needs a cook with at least 2 Cooking skill. Low-skill cooks are much slower still - a fresh cook needs most of an hour per piece, a legendary one about ten seconds. Cleaning a whole raid's loot is a real labor investment.
-[*]Boiling costs durability: a share of the item's [b]current[/b] hit points (30% by default, rounded up). An item is never destroyed by boiling - the worst case leaves it at 1 hp.[/list]
+[list][*]Boiling is slow on purpose: one item takes ten times the work of cooking a simple meal, and the bill needs a cook with at least 2 Cooking skill. Low-skill cooks are much slower still - a fresh cook needs over two in-game hours per piece, a legendary one around half a minute. Cleaning a whole raid's loot is a serious labor commitment, not a side chore.
 [*]One boil is one work iteration per item - large piles of loot mean large piles of hauling and cooking work. Balance!
 [*]The bill has no "do until you have X" repeat mode, since there is no product to count (same as vanilla's burn recipes).[/list]
 

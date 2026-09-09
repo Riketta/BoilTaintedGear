@@ -24,34 +24,39 @@ safe to add or remove at any time.
 Boiling is deliberately not free: the scrubbing wears the item out, charging
 **30% of the item's current durability** by default (rounded up, configurable
 in the mod settings). An item is never destroyed by boiling - the worst case
-leaves it at 1 hp.
-
-Why 30%: the *average* piece of raider loot spawns at ~84% of max HP
-(vanilla `gearHealthRange` rolls), so it comes out at ~59% - right between
-vanilla's two usability lines. Above the 50% "ratty apparel" mood threshold,
-but through the 60% market-value cliff (`StatPart_Health`: 60% HP sells for
-half, 50% HP for a tenth). Per tier: elite gear (100%) cleans up to 70% and
-still sells well; pirate/mercenary pieces (~97-98%) land at ~68%; scavenger
-gear (~74%) at ~52%; drifter rags (~40%) turn into 28% junk - so it pays to
-cherry-pick what you boil. Armor itself never degrades with HP in RimWorld,
-so a cleaned vest still protects fully; the tax is mood and trade value.
+leaves it at 1 hp. See *Balance* below for why 30%.
 
 ## Balance
 
-One boil takes **1000 work** - over 3x cooking a simple meal (300), ~2x
-butchering a creature (450) and 16x just burning the rags (60) - and needs a
-cook with **Cooking 2+** (the same vanilla skill gate fine and lavish meals
-use). Speed follows the vanilla CookSpeed curve (0.4x at skill 0 up to 1.6x
-at 20):
+One boil takes **3000 work** - 10x cooking a simple meal (300), 7.5x brewing
+psychite tea (400), ~6.7x butchering a creature (450) and 50x just burning
+the rags (60) - and needs a cook with **Cooking 2+** (the same vanilla skill
+gate fine and lavish meals use). Speed follows the vanilla CookSpeed curve
+(0.4x at skill 0 up to 1.6x at 20):
 
 | Cooking skill | 2 | 5 | 10 | 20 |
 |---|---|---|---|---|
-| ticks per boiled item | ~1920 (~0.8 h) | ~1430 | 1000 (~17 s) | 625 (~10 s) |
+| ticks per boiled item | ~5770 | ~4290 | 3000 | ~1880 |
+| real time @1x speed | ~96 s | ~71 s | 50 s | ~31 s |
+| in-game hours | ~2.3 | ~1.7 | ~1.2 | ~0.8 |
 
-Cleaning a big raid's loot is a real labor investment for rookie cooks - and
-boiling trains Cooking as a side effect, so the chore eases as your cook
-learns. The 30% durability charge stacks the usual apparel policy pressure on
-top: repeatedly saved gear is still gear you'll want to replace eventually.
+Cleaning a big raid's loot is a serious labor investment for rookie cooks -
+and boiling trains Cooking as a side effect, so the chore eases as your cook
+learns.
+
+The durability charge defaults to **30% of the item's current hit points**
+(configurable in the settings). That number is chosen so the *average* piece
+of raider loot (about 84% of max, per the vanilla `gearHealthRange` rolls)
+comes out at ~59% - right between vanilla's two usability lines. Above the
+50% "ratty apparel" mood threshold, but through the 60% market-value cliff
+(`StatPart_Health`: 60% HP sells for half, 50% HP for a tenth). Per tier:
+elite gear (100%) cleans up to 70% and still sells well; pirate/mercenary
+pieces (~97-98%) land at ~68%; scavenger gear (~74%) at ~52%; drifter rags
+(~40%) turn into 28% junk - so it pays to cherry-pick what you boil. Armor
+itself never degrades with HP in RimWorld, so a cleaned vest still protects
+fully; the tax is mood and trade value. The charge stacks the usual apparel
+policy pressure on top: repeatedly saved gear is still gear you'll want to
+replace eventually.
 
 ## Mod settings
 
