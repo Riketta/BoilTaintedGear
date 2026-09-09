@@ -1,0 +1,30 @@
+# Steam Workshop description
+
+Paste the text below into the Workshop item's description field when publishing
+(the BBCode renders on Steam, but not in-game - `About/About.xml` carries its own
+plain-text description).
+
+```
+[h3]Boil Tainted Gear[/h3]
+Stoves and campfires gain a "boil tainted gear" bill that washes the death out of apparel. Looted tainted gear no longer has to be worn with disgust, sold cheap or burned - boil it clean and wear it.
+
+[h3]What it does[/h3]
+[list][*]Electric stoves, fueled stoves and campfires gain a new bill: [b]boil tainted gear[/b].
+[*]Anything that can become tainted shows up in the bill filter as usual - vanilla, DLC and modded apparel alike. Restrict the filter by category, quality or whatever you need; untainted pieces are never actually boiled.
+[*]A pawn hauls the tainted apparel to the fire, boils it clean, and the item is placed next to the fire for a hauler to carry back. Quality, color, style and mod-added parts are all kept - only the taint goes.
+[*]Boiling costs durability: a share of the item's [b]current[/b] hit points (10% by default, rounded up). An item is never destroyed by boiling - the worst case leaves it at 1 hp.
+[*]No research required: a campfire and a big pot are enough, so tribal colonies can clean loot from day one.[/list]
+
+[h3]Settings[/h3]
+Master switch, durability cost slider (0-90%, default 10%), and debug logging (Off / Basic / Verbose).
+
+[h3]Things to keep in mind[/h3]
+[list][*]One boil is one work iteration per item - large piles of loot mean large piles of hauling and cooking work. Balance!
+[*]The bill has no "do until you have X" repeat mode, since there is no product to count (same as vanilla's burn recipes).[/list]
+
+[h3]Compatibility[/h3]
+Requires RimWorld 1.6; all DLCs are optional, no other mods needed.
+Nothing is hardcoded to specific items: the bill is an ordinary recipe attached through the vanilla recipeUsers mechanism, and the cleaning itself reuses the game's own taint flag. Safe to add or remove at any time.
+
+Source code and details: [url]https://github.com/Riketta/BoilTaintedGear[/url]
+```

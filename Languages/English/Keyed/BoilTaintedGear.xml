@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BoilTaintedGear.SettingsCategory>Boil Tainted Gear</BoilTaintedGear.SettingsCategory>
+
+  <BoilTaintedGear.Enabled>Enabled</BoilTaintedGear.Enabled>
+  <BoilTaintedGear.Enabled.Tip>Master switch. While off, the boil bills find no ingredients and sit idle; the bills themselves are kept and work again as soon as this is re-enabled.</BoilTaintedGear.Enabled.Tip>
+
+  <BoilTaintedGear.DurabilityCost>Durability cost: {0}%</BoilTaintedGear.DurabilityCost>
+  <BoilTaintedGear.DurabilityCost.Tip>How much durability one boil costs, as a percentage of the item's CURRENT hit points (rounded up). The default is 10%. Boiling never destroys an item: at most it is left at 1 hp. Applies from the next boiled item on.</BoilTaintedGear.DurabilityCost.Tip>
+
+  <BoilTaintedGear.DebugLevel>Debug logging: {0}</BoilTaintedGear.DebugLevel>
+  <BoilTaintedGear.DebugLevel.Tip>Cycles Off / Basic / Verbose.\n\nBasic logs mod loading and every boiled item. Verbose additionally logs per-item durability details and any ingredient that had to be handled the vanilla way instead.</BoilTaintedGear.DebugLevel.Tip>
+
+  <BoilTaintedGear.BehaviorNote>Stoves and campfires offer a "boil tainted gear" bill. It accepts apparel that is currently tainted, cleans it and charges the configured durability cost; the cleaned item is placed next to the fire for a hauler to pick up. Boiling never destroys gear.</BoilTaintedGear.BehaviorNote>
+</LanguageData>

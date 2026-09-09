@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Cleans corpse taint off apparel at stoves and the campfire. Mirrors
+       vanilla's productless burn recipes (BurnApparel etc.), except the
+       ingredient survives: the recipe's worker class
+       (BoilTaintedGear.RecipeWorker_BoilGear) overrides the vanilla
+       ingredient-consumption hook to untaint the item and charge the
+       configured durability cost instead of destroying it.
+
+       The ingredient filter is a C# subclass (ThingFilter_TaintedGear)
+       because "currently tainted" is per-thing state that no def-level
+       filter field can express; its base state (Apparel category) is what
+       the player sees and edits in the bill dialog. -->
+  <RecipeDef>
+    <defName>BoilTaintedGear_BoilGear</defName>
+    <workerClass>BoilTaintedGear.RecipeWorker_BoilGear</workerClass>
+    <label>boil tainted gear</label>
+    <description>Boil apparel that was worn by the dead in a big pot of water to wash the taint off. The scrubbing wears the item out: it loses a share of its current durability (10% by default, see mod settings) but keeps its quality, color and style.</description>
+    <jobString>Boiling tainted gear.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <ingredients>
+      <li>
+        <filter Class="BoilTaintedGear.ThingFilter_TaintedGear">
+          <categories>
+            <li>Apparel</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+      </categories>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+      <li>Campfire</li>
+    </recipeUsers>
+  </RecipeDef>
+
+</Defs>
