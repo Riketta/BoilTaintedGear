@@ -16,12 +16,23 @@
     <defName>BoilTaintedGear_BoilGear</defName>
     <workerClass>BoilTaintedGear.RecipeWorker_BoilGear</workerClass>
     <label>boil tainted gear</label>
-    <description>Boil apparel that was worn by the dead in a big pot of water to wash the taint off. The scrubbing wears the item out: it loses a share of its current durability (10% by default, see mod settings) but keeps its quality, color and style.</description>
+    <description>Boil apparel that was worn by the dead in a big pot of water to wash the taint off. Slow, careful work that takes over three times as long as cooking a simple meal - and clumsy cooks are much slower still. The scrubbing wears the item out: it loses a share of its current durability (10% by default, see mod settings) but keeps its quality, color and style.</description>
     <jobString>Boiling tainted gear.</jobString>
-    <workAmount>300</workAmount>
+    <!-- Work balance (RimWorld 1.6): burn apparel 60 / cremate corpse 180 /
+         cook simple meal 300 / butcher creature 450, all at near-identical
+         skill speed curves. Boiling saves the item instead of destroying it,
+         so it costs 3.3x a meal and 16x burning, and the Cooking-2 skill
+         gate keeps total novices out (same mechanism as fine/lavish meals).
+         CookSpeed runs 0.4x at skill 0 to 1.6x at 20: the worst allowed cook
+         (level 2) needs ~1920 ticks per item, a legendary one ~625 - hard
+         labor for rookies, quick for masters. -->
+    <workAmount>1000</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <workSkill>Cooking</workSkill>
+    <skillRequirements>
+      <Cooking>2</Cooking>
+    </skillRequirements>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <ingredients>

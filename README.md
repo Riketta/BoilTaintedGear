@@ -26,6 +26,23 @@ Boiling is deliberately not free: the scrubbing wears the item out, charging
 in the mod settings). An item is never destroyed by boiling - the worst case
 leaves it at 1 hp.
 
+## Balance
+
+One boil takes **1000 work** - over 3x cooking a simple meal (300), ~2x
+butchering a creature (450) and 16x just burning the rags (60) - and needs a
+cook with **Cooking 2+** (the same vanilla skill gate fine and lavish meals
+use). Speed follows the vanilla CookSpeed curve (0.4x at skill 0 up to 1.6x
+at 20):
+
+| Cooking skill | 2 | 5 | 10 | 20 |
+|---|---|---|---|---|
+| ticks per boiled item | ~1920 (~0.8 h) | ~1430 | 1000 (~17 s) | 625 (~10 s) |
+
+Cleaning a big raid's loot is a real labor investment for rookie cooks - and
+boiling trains Cooking as a side effect, so the chore eases as your cook
+learns. The 10% durability charge stacks the usual apparel policy pressure on
+top: repeatedly saved gear is still gear you'll want to replace eventually.
+
 ## Mod settings
 
 - **Enabled** - master switch. While off, boil bills find no ingredients and
