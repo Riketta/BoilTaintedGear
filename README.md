@@ -53,9 +53,17 @@ gear keeps roughly half its worth, with a safe margin over the 50% "ratty
 apparel" mood threshold. Per tier: elite gear (100%) cleans up to 75% and
 sells well; pirate/mercenary pieces (~97-98%) land at ~73%; scavenger gear
 (~74%) at ~55%, hovering just above the cliff; drifter rags (~40%) turn into
-30% junk - so it pays to cherry-pick what you boil. Armor itself never
-degrades with HP in RimWorld, so a cleaned vest still protects fully; the
-tax is mood and trade value. The charge stacks the usual apparel policy
+30% junk - so it pays to cherry-pick what you boil.
+
+One more thing these calculations ignore - in the mod's favor: the spawn
+figures are a *ceiling*. Vanilla armor absorbs damage by taking hits itself
+(`ArmorUtility.ApplyArmor` burns 25% of the incoming damage into the piece
+on every blocked or diminished strike), and loot left outdoors deteriorates.
+Gear that survived a real fight is therefore almost always below its
+generation roll before the boil even starts, so the ~63% average is the best
+case and the charge lands noticeably harder in practice. Armor itself never
+degrades in effect, though - a cleaned vest protects fully regardless of HP;
+the tax is mood and trade value. The charge stacks the usual apparel policy
 pressure on top: repeatedly saved gear is still gear you'll want to replace
 eventually.
 

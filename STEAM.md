@@ -20,6 +20,7 @@ Master switch, durability cost slider (0-90%, default 25%), and debug logging (O
 
 [h3]Things to keep in mind[/h3]
 [list][*]Boiling is slow on purpose: one item takes ten times the work of cooking a simple meal, and the bill needs a cook with at least 2 Cooking skill. Low-skill cooks are much slower still - a fresh cook needs over two in-game hours per piece, a legendary one around half a minute. Cleaning a whole raid's loot is a serious labor commitment, not a side chore.
+[*]The durability numbers are best-case: armor absorbs damage by taking hits itself, and gear left outdoors deteriorates - pieces that went through a real fight are already below their condition roll before the boil, so cleaned loot usually lands even lower than the percentages suggest.
 [*]One boil is one work iteration per item - large piles of loot mean large piles of hauling and cooking work. Balance!
 [*]The bill has no "do until you have X" repeat mode, since there is no product to count (same as vanilla's burn recipes).[/list]
 

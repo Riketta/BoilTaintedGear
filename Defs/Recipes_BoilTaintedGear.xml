@@ -36,7 +36,13 @@
          cleaned gear keeps roughly half its worth, with a safe margin over
          the 50% "ratty apparel" mood line. Elite gear (100% -> 75%) stays
          comfortably valuable, drifter rags (~40% -> 30%) turn into junk -
-         players cherry-pick what is worth boiling. -->
+         players cherry-pick what is worth boiling.
+
+         Note: the ~84% spawn average ignores combat wear - armor pieces
+         absorb hits by taking damage themselves (ArmorUtility.ApplyArmor
+         charges 25% of incoming damage to the piece), and outdoor loot
+         deteriorates - so loot from a real fight sits below its generation
+         roll and the effective charge lands harder in practice. -->
     <workAmount>3000</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
