@@ -1,6 +1,6 @@
 # Boil Tainted Gear
 
-A RimWorld 1.6 mod for cleaning looted apparel. Stoves and campfires gain a
+A RimWorld mod for cleaning looted apparel. Stoves and campfires gain a
 **boil tainted gear** bill that washes corpse taint out of apparel - anything
 that can become tainted (vanilla, DLC or modded) shows up in the bill filter
 as usual, so you simply queue the pieces you want cleaned.
