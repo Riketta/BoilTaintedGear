@@ -16,7 +16,7 @@
     <defName>BoilTaintedGear_BoilGear</defName>
     <workerClass>BoilTaintedGear.RecipeWorker_BoilGear</workerClass>
     <label>boil tainted gear</label>
-    <description>Boil apparel that was worn by the dead in a big pot of water to wash the taint off. Long, careful work that takes ten times as long as cooking a simple meal - and clumsy cooks are much slower still. The scrubbing wears the item out: it loses a share of its current durability (30% by default, see mod settings), so looted gear comes out wearable but clearly second-hand.</description>
+    <description>Boil apparel that was worn by the dead in a big pot of water to wash the taint off. Long, careful work that takes ten times as long as cooking a simple meal - and clumsy cooks are much slower still. The scrubbing wears the item out: it loses a share of its current durability (25% by default, see mod settings), so looted gear comes out wearable but clearly second-hand.</description>
     <jobString>Boiling tainted gear.</jobString>
     <!-- Work balance (RimWorld 1.6): burn apparel 60 / cremate corpse 180 /
          cook simple meal 300 / butcher creature 450, all at near-identical
@@ -29,12 +29,13 @@
          legendary one ~1875 (~31 s) - hard labor for rookies, quick for
          masters.
 
-         Durability cost default 30%: the average raider piece spawns at ~84%
+         Durability cost default 25%: the average raider piece spawns at ~84%
          of max HP (uniform gearHealthRange rolls, capped at 100%), so it
-         lands at ~59% after boiling - above the 50% "ratty apparel" mood
-         line, but through the 60% market-value cliff (StatPart_Health:
-         60% HP sells for half, 50% HP for a tenth). Elite gear (100% -> 70%)
-         stays worth wearing, drifter rags (~40% -> 28%) turn into junk -
+         lands at ~63% after boiling - just above the 60% market-value cliff
+         (StatPart_Health: 60% HP sells for half, 50% HP for a tenth), so
+         cleaned gear keeps roughly half its worth, with a safe margin over
+         the 50% "ratty apparel" mood line. Elite gear (100% -> 75%) stays
+         comfortably valuable, drifter rags (~40% -> 30%) turn into junk -
          players cherry-pick what is worth boiling. -->
     <workAmount>3000</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>

@@ -22,9 +22,9 @@ safe to add or remove at any time.
    next to the fire for a hauler to carry back to your stockpile.
 
 Boiling is deliberately not free: the scrubbing wears the item out, charging
-**30% of the item's current durability** by default (rounded up, configurable
+**25% of the item's current durability** by default (rounded up, configurable
 in the mod settings). An item is never destroyed by boiling - the worst case
-leaves it at 1 hp. See *Balance* below for why 30%.
+leaves it at 1 hp. See *Balance* below for why 25%.
 
 ## Balance
 
@@ -44,25 +44,26 @@ Cleaning a big raid's loot is a serious labor investment for rookie cooks -
 and boiling trains Cooking as a side effect, so the chore eases as your cook
 learns.
 
-The durability charge defaults to **30% of the item's current hit points**
+The durability charge defaults to **25% of the item's current hit points**
 (configurable in the settings). That number is chosen so the *average* piece
 of raider loot (about 84% of max, per the vanilla `gearHealthRange` rolls)
-comes out at ~59% - right between vanilla's two usability lines. Above the
-50% "ratty apparel" mood threshold, but through the 60% market-value cliff
-(`StatPart_Health`: 60% HP sells for half, 50% HP for a tenth). Per tier:
-elite gear (100%) cleans up to 70% and still sells well; pirate/mercenary
-pieces (~97-98%) land at ~68%; scavenger gear (~74%) at ~52%; drifter rags
-(~40%) turn into 28% junk - so it pays to cherry-pick what you boil. Armor
-itself never degrades with HP in RimWorld, so a cleaned vest still protects
-fully; the tax is mood and trade value. The charge stacks the usual apparel
-policy pressure on top: repeatedly saved gear is still gear you'll want to
-replace eventually.
+comes out at ~63% - just above vanilla's 60% market-value cliff
+(`StatPart_Health`: 60% HP sells for half, 50% HP for a tenth), so cleaned
+gear keeps roughly half its worth, with a safe margin over the 50% "ratty
+apparel" mood threshold. Per tier: elite gear (100%) cleans up to 75% and
+sells well; pirate/mercenary pieces (~97-98%) land at ~73%; scavenger gear
+(~74%) at ~55%, hovering just above the cliff; drifter rags (~40%) turn into
+30% junk - so it pays to cherry-pick what you boil. Armor itself never
+degrades with HP in RimWorld, so a cleaned vest still protects fully; the
+tax is mood and trade value. The charge stacks the usual apparel policy
+pressure on top: repeatedly saved gear is still gear you'll want to replace
+eventually.
 
 ## Mod settings
 
 - **Enabled** - master switch. While off, boil bills find no ingredients and
   sit idle; they work again when re-enabled.
-- **Durability cost** (default 30%) - share of *current* hit points charged
+- **Durability cost** (default 25%) - share of *current* hit points charged
   per boil, rounded up. Applies from the next boiled item on.
 - **Debug logging** - Off / Basic (mod load, every boiled item) / Verbose
   (per-item durability details and fallback paths).

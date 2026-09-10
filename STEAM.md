@@ -12,11 +12,11 @@ Stoves and campfires gain a "boil tainted gear" bill that washes the death out o
 [list][*]Electric stoves, fueled stoves and campfires gain a new bill: [b]boil tainted gear[/b].
 [*]Anything that can become tainted shows up in the bill filter as usual - vanilla, DLC and modded apparel alike. Restrict the filter by category, quality or whatever you need; untainted pieces are never actually boiled.
 [*]A pawn hauls the tainted apparel to the fire, boils it clean, and the item is placed next to the fire for a hauler to carry back. Quality, color, style and mod-added parts are all kept - only the taint goes.
-[*]Boiling costs durability: a share of the item's [b]current[/b] hit points (30% by default, rounded up), tuned so the average piece of looted gear comes out wearable but clearly second-hand - good pieces survive nicely, junk stays junk. An item is never destroyed by boiling - the worst case leaves it at 1 hp.
+[*]Boiling costs durability: a share of the item's [b]current[/b] hit points (25% by default, rounded up), tuned so the average piece of looted gear comes out wearable but clearly second-hand - good pieces survive nicely, junk stays junk. An item is never destroyed by boiling - the worst case leaves it at 1 hp.
 [*]No research required: a campfire and a big pot are enough, so tribal colonies can clean loot from day one.[/list]
 
 [h3]Settings[/h3]
-Master switch, durability cost slider (0-90%, default 30%), and debug logging (Off / Basic / Verbose).
+Master switch, durability cost slider (0-90%, default 25%), and debug logging (Off / Basic / Verbose).
 
 [h3]Things to keep in mind[/h3]
 [list][*]Boiling is slow on purpose: one item takes ten times the work of cooking a simple meal, and the bill needs a cook with at least 2 Cooking skill. Low-skill cooks are much slower still - a fresh cook needs over two in-game hours per piece, a legendary one around half a minute. Cleaning a whole raid's loot is a serious labor commitment, not a side chore.
