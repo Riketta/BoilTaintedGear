@@ -8,6 +8,12 @@ as usual, so you simply queue the pieces you want cleaned.
 No dependencies, no research. Works with all DLC and mods by design, and is
 safe to add or remove at any time.
 
+**Balance in one paragraph:** the mod charges for cleaning in two currencies
+instead of research or ingredients - long, skill-gated cooking labor, and a
+permanent durability tax on every washed item. Cleaned pieces come out
+usable but second-hand, so saving good loot is worthwhile while boiling junk
+is not. (Numbers and reasoning in *Balance* below.)
+
 ## How to use
 
 1. Build (or already own) an **electric stove, fueled stove or campfire** -

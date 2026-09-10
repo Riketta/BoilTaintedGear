@@ -8,6 +8,8 @@ plain-text description).
 [h3]Boil Tainted Gear[/h3]
 Stoves and campfires gain a "boil tainted gear" bill that washes the death out of apparel. Looted tainted gear no longer has to be worn with disgust, sold cheap or burned - boil it clean and wear it.
 
+[b]Balanced by design:[/b] no research and no ingredients - the price is paid in slow, skill-gated work at the stove and a permanent durability tax on every wash. Cleaned pieces end up usable but second-hand: good loot is worth saving, junk is not.
+
 [h3]What it does[/h3]
 [list][*]Electric stoves, fueled stoves and campfires gain a new bill: [b]boil tainted gear[/b].
 [*]Anything that can become tainted shows up in the bill filter as usual - vanilla, DLC and modded apparel alike. Restrict the filter by category, quality or whatever you need; untainted pieces are never actually boiled.
