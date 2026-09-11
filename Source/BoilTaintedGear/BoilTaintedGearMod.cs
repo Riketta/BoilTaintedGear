@@ -17,14 +17,15 @@ namespace BoilTaintedGear
         public bool enabled = true;
 
         /// <summary>Durability cost of one boil, in percent of the item's
-        /// CURRENT hit points (default 25). Clamped 0..90 when read; boiling
+        /// CURRENT hit points (default 20). Clamped 0..90 when read; boiling
         /// never destroys an item either way. The default is tuned so the
         /// average piece of raider loot (~84% of max HP, see vanilla
-        /// gearHealthRange rolls) lands at ~63% - just above the 60%
-        /// market-value cliff of StatPart_Health (cleaned gear keeps roughly
-        /// half its trade value) and safely above the 50% "ratty apparel"
-        /// mood line - usable but clearly second-hand.</summary>
-        public int durabilityCostPercent = 25;
+        /// gearHealthRange rolls) lands at ~67% - above both usability
+        /// lines: safely clear of the 50% "ratty apparel" mood line and
+        /// over the 60% market-value cliff of StatPart_Health (cleaned
+        /// gear keeps roughly 60% of its trade value). Combat wear makes
+        /// real-world loot land lower still.</summary>
+        public int durabilityCostPercent = 20;
 
         public int debugLevel = (int)DebugLogLevel.Off;
 
@@ -32,7 +33,7 @@ namespace BoilTaintedGear
         {
             base.ExposeData();
             Scribe_Values.Look(ref enabled, "enabled", true);
-            Scribe_Values.Look(ref durabilityCostPercent, "durabilityCostPercent", 25);
+            Scribe_Values.Look(ref durabilityCostPercent, "durabilityCostPercent", 20);
             Scribe_Values.Look(ref debugLevel, "debugLevel", (int)DebugLogLevel.Off);
         }
     }
@@ -52,7 +53,7 @@ namespace BoilTaintedGear
         /// points, read at the moment a job completes so setting changes
         /// apply from the next boiled item on.</summary>
         public static int DurabilityCostPercent =>
-            Mathf.Clamp(Settings?.durabilityCostPercent ?? 25, 0, 90);
+            Mathf.Clamp(Settings?.durabilityCostPercent ?? 20, 0, 90);
 
         public BoilTaintedGearMod(ModContentPack content) : base(content)
         {

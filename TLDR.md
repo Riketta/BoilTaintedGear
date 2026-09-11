@@ -1,7 +1,7 @@
 # Boil Tainted Gear
 
 Stoves and campfires gain a "boil tainted gear" bill that washes corpse taint out of apparel. Anything that can become tainted shows up in the bill filter as usual; the cleaned item keeps quality, color and style.
-Costs 25% of the item's current durability by default (configurable), never destroys the item.
+Costs 20% of the item's current durability by default (configurable), never destroys the item.
 
 ## What it does
 

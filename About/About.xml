@@ -11,7 +11,7 @@
 
 In short - why and how it is balanced: cleaning taint costs no research and no ingredients, so it is paid for in work and wear instead. Boiling is long, skill-gated labor at the stove, and every wash permanently wears the piece out - cleaned gear stays usable but second-hand, so good loot is worth saving and junk is not.
 
-Boiling is no free lunch: the scrubbing wears the item out, costing a share of its current durability (25% by default, configurable in the mod settings). That is tuned so an average piece of looted gear comes out wearable but clearly second-hand - good pieces survive nicely, junk stays junk. The item keeps its quality, color, style and any mod-added parts - only the taint goes and some durability with it.
+Boiling is no free lunch: the scrubbing wears the item out, costing a share of its current durability (20% by default, configurable in the mod settings). That is tuned so an average piece of looted gear comes out wearable and still worth owning - good pieces survive nicely, junk stays junk. The item keeps its quality, color, style and any mod-added parts - only the taint goes and some durability with it.
 
 No research needed: a campfire and a big pot of water are enough, so tribal colonies can clean loot from day one. No new dependencies, nothing hardcoded to specific items - the bill is an ordinary recipe attached through the vanilla recipeUsers mechanism, works with all DLC and mods, and is safe to add or remove at any time. Optional layered debug logging in the settings.</description>
 </ModMetaData>
